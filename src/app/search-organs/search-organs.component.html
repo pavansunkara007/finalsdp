@@ -1,0 +1,28 @@
+<app-header></app-header>
+<div class="style">
+   <div *ngFor='let d of doctors'>
+      <mat-card class="example-card">
+         <mat-card-header>
+           <div mat-card-avatar >
+            <mat-icon>medical_services</mat-icon>
+           </div>
+           <mat-card-title>{{d.name}}</mat-card-title>
+         </mat-card-header>
+         <mat-card-content>
+            <p style=" font-weight: 450;">
+               This test is available in {{d.hosp}} <br>
+               The cost of the test is {{d.exp}}<br>
+               Would you like to book a slot for the test?
+            </p>   
+            <input mat-input type="date">
+         </mat-card-content>
+         <mat-card-actions>
+           <button mat-raised-button color=primary (click)="open()">Book your slot</button>
+         </mat-card-actions>
+       </mat-card>
+   </div>
+</div>
+ 
+ 
+
+<app-footer></app-footer>

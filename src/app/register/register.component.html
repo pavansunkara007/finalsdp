@@ -1,0 +1,50 @@
+<mat-card class="customer-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Sign Up</mat-card-title>
+    <mat-card-subtitle>Note: you are register as customer</mat-card-subtitle>
+  </mat-card-header> 
+  
+<form class="example-form">
+
+<mat-form-field class="example-full-width">
+  <mat-label>User Name</mat-label>
+  <input matInput type="text" required minlength="3" [formControl]="registerData.username" placeholder="Eg: Saireddy" required>
+</mat-form-field>
+<br>
+        <mat-form-field class="example-full-width">
+          <mat-label>Phonenumber</mat-label>
+          <mat-icon matSuffix>phone</mat-icon>
+          <span matPrefix>+91 &nbsp;</span>
+          <input matInput type="number" required minlength="10" [formControl]="registerData.phone" placeholder="555-123-3652" required>
+          <mat-hint class="cautioncolor">Caution: Phone number contains 10 digits only</mat-hint>
+        </mat-form-field>
+
+        <div class="example-container">
+          <mat-form-field appearance="fill">
+            <mat-label>Enter your email</mat-label>
+            <input matInput type="email" [formControl]="registerData.email" placeholder="sai@gmail.com" required> 
+          </mat-form-field>
+        </div> 
+
+      <div class="example-container">
+        <mat-form-field class="example">
+          <mat-label>Password</mat-label>
+          <!-- <input matInput [type]="hide ? 'password' : 'text'" pattern="(?=.\d)(?=.[!()@#$%^&])(?=.[a-z])(?=.*[A-Z]).{8,}" [formControl]="registerData.password" placeholder="Password" required> 
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button> -->
+          <input matInput [type]="hide ? 'password' : 'text'" [formControl]="registerData.password" placeholder="Password" required>
+              <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button>
+          <mat-error *ngIf="registerData.password.invalid">{{getError()}}</mat-error>
+        </mat-form-field>
+          </div>
+            </form>
+
+
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="registerUser()" [disabled]="registerData.password.invalid || registerData.username.invalid || registerData.email.invalid || registerData.phone.invalid" class="example-button">Login</button>
+  </mat-card-actions>
+</mat-card>

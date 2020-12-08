@@ -1,0 +1,59 @@
+<div>
+  <mat-toolbar style="background-color: #3f51b5">
+    <button mat-raised-button routerLink="/contact">
+       Contact Us
+       <mat-icon>connect_without_contact</mat-icon>
+    </button>
+     <span class="example-spacer"></span>
+     <span style="color: rgb(255, 255, 255);">ASHUR</span>
+     <span class="example-spacer"></span>
+     <div style="display:flex; flex-direction:row; gap:20px;">
+      <button mat-raised-button class="example-icon" routerLink="/donorList">
+        Donors List
+        <mat-icon>health_and_safety</mat-icon>
+     </button>
+        <button mat-raised-button class="example-icon" routerLink="/">
+           Logout
+           <mat-icon>login</mat-icon>
+        </button>
+     </div>
+  </mat-toolbar>
+ 
+</div>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="position">
+    <th mat-header-cell *matHeaderCellDef> No. </th>
+    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="BloodGroup">
+    <th mat-header-cell *matHeaderCellDef> Blood Group </th>
+    <td mat-cell *matCellDef="let element"> {{element.BloodGroup}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="RhFactor">
+    <th mat-header-cell *matHeaderCellDef> Rh Factor </th>
+    <td mat-cell *matCellDef="let element"> {{element.RhFactor}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="units">
+    <th mat-header-cell *matHeaderCellDef> No.of units available</th>
+    <td mat-cell *matCellDef="let element"> {{element.units}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="hosp">
+    <th mat-header-cell *matHeaderCellDef> Available in Hospital</th>
+    <td mat-cell *matCellDef="let element"> {{element.hosp}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+
+
+
+
+<app-footer></app-footer>

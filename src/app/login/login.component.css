@@ -1,0 +1,72 @@
+.login-card {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 500px;
+  height: 630px;
+  opacity: 0.8;
+  color: black;
+}
+     
+ 
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .toolcolor{
+    background-color:#00000081;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 254, 254);
+  } 
+  .example-card {
+    width: 400px;
+    padding: 0;
+    margin: 0; 
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    }
+  
+    .example-card:hover {
+      transform: translateY(-5px) scale(1.005) translateZ(0);
+      box-shadow: 0 24px 36px rgba(0,0,0,0.11), 0 24px 46px var(--box-shadow-color);
+    }
+    
+    .example-card:hover .overlay {
+      transform: scale(4) translateZ(0);
+    }
+  
+  .example{
+    width: 250px;
+    margin-top: 10px;
+  }
+  
+  .title{
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0);
+    justify-content: center;
+    text-transform: uppercase;
+    border-radius: 20px 20px 0px 0px;
+    opacity: 1;
+  }
+  
+  .example-button{
+    margin: 10px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    background-color: #0e7cfa;
+    justify-content: center;
+    width: auto;
+  }
+  
+  .example-form {
+    min-width: 250px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }

@@ -1,0 +1,17 @@
+.back{
+    color: #1031eb;
+    margin-left: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+}
+
+.background {
+    height: 100vh;
+    background-image: url(src\assets\images\2.jpg);
+   /* background-color: darkcyan;*/
+    background-size: cover;
+}
+
+.button{
+    margin-left: 470px;
+}

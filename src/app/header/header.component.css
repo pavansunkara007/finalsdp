@@ -1,0 +1,26 @@
+
+.header1 {
+
+	padding: 30px;
+
+	text-align: center;
+
+	background: #1abc9c;
+
+	color: white;
+
+	background-image: radial-gradient(circle 1028px at 3.1% 8.5%, rgba(170, 165, 156, 1) 0%, rgba(77, 74, 70, 1) 90.1%);
+
+}
+.example-spacer {
+	flex: 1 1 auto;
+}
+
+.back{
+	background-color: blueviolet;
+}
+
+
+
+  
+

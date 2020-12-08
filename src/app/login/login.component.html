@@ -1,0 +1,44 @@
+<div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px" fxLayout.sm="column" fxLayout.xs="column" style="background-image: url(../assets/images/travelbooking.webp); background-repeat: no-repeat; background-size: 100% 105%;">
+  <div style="padding: 10px;">
+    <div fxLayout="column" fxLayoutAlign="center center" class="login-card">
+      <mat-card class="example-card">
+        <mat-toolbar class="title">
+          Login into your account
+        </mat-toolbar>
+        <br>
+      <div fxLayout="column" fxLayoutAlign="center center">        
+          <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="5px">
+            <mat-icon class="material-icons">email</mat-icon>
+              <mat-form-field class="example">
+                <mat-label>Email</mat-label>
+                <input matInput type="email" [formControl]="loginUserData.email" placeholder="yourname@email.com" required> 
+                <mat-error *ngIf="loginUserData.email.invalid">{{getErrorMessage()}}</mat-error>
+              </mat-form-field>
+          </div>
+          <br>
+          <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="5px">
+            <mat-icon><span class="material-icons">lock</span></mat-icon>
+              <mat-form-field class="example">
+                <mat-label>Password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" [formControl]="loginUserData.password" placeholder="Enter your password" required> 
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+                <mat-error *ngIf="loginUserData.password.invalid">{{getError()}}</mat-error>
+                  </mat-form-field>
+          </div>            
+</div>
+<br>
+<div fxLayoutAlign="center">
+  <span>New User, Click here to SignUp!!&nbsp;&nbsp;</span>
+  
+<a routerLink="/register" routerLinkActive="active" style="margin-right:20px">SignUp</a>
+</div>
+        <div fxLayout="row" fxLayoutAlign="center">
+          <button mat-raised-button color="primary" (click)="loginUser()" [disabled]="loginUserData.password.invalid || loginUserData.email.invalid" class="example-button">Login</button>
+        </div> 
+        
+      </mat-card>
+    </div>
+  </div>
+</div>

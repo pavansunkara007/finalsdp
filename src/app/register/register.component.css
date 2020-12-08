@@ -1,0 +1,43 @@
+.customer-card{
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	width: 500px;
+	height: 560px;
+	opacity: 0.9;
+	color: black;
+  }
+  .cautioncolor{
+	  color: red;
+  }
+  
+  .example-header-image {
+	  background-image: url('/assets/images/1.jpeg');
+	  background-size: cover;
+	}
+  
+	.example-container .mat-form-field + .mat-form-field {
+	  margin-left: 8px;
+	}
+	
+	.example-right-align {
+	  text-align: right;
+	}
+	
+	input.example-right-align::-webkit-outer-spin-button,
+	input.example-right-align::-webkit-inner-spin-button {
+	  display: none;
+	}
+	
+	input.example-right-align {
+	  -moz-appearance: textfield;
+	}
+	
+	.example-spacer {
+	  flex: 1 1 auto;
+	}
+	.toolcolor{
+	  background-color:#00000081;
+	  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	  color: rgb(255, 254, 254);
+	}

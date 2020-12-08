@@ -1,0 +1,56 @@
+<app-header></app-header>
+<div style="display:flex; flex-direction:row; gap: 100px;">
+    <div >
+        <div style="display:flex; flex-direction:row; gap: 100px;">
+            <mat-card class="appointment" routerLink='/booking'>
+                <mat-card-header>
+                    <mat-card-title >Appointments</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image src="/assets/images/appointment.jpeg" style="height:150px;">
+                <mat-card-content>
+                    <p>Here you can book your appointments.</p>
+                </mat-card-content>
+                <button mat-raised-button color="primary">Book your appointment</button>
+            </mat-card>
+            <mat-card class="appointment">
+                <mat-card-header>
+                    <mat-card-title>Medical Assistants</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image src="/assets/images/med-asst.jpg" style="height:150px;">
+                <mat-card-content>
+                    <p>Hire medical assistants.</p>
+                </mat-card-content>
+                <button mat-raised-button color="primary" routerLink='/asst'>Search</button>
+            </mat-card>
+           
+        </div><br>
+        <div style="display:flex; flex-direction:row; gap: 100px;">
+            <mat-card class="appointment">
+                <mat-card-header>
+                    <mat-card-title>Medical Tests</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image src="/assets/images/tests.jpeg" style="height:150px;">
+                <mat-card-content>
+                    <p>
+                        Here you can book your slots for different types of medical tests.
+                    </p>
+                </mat-card-content>
+                <button mat-raised-button color="primary" routerLink='/searchOrgans'>Book Your slot</button>
+            </mat-card>
+            <mat-card class="appointment">
+                <mat-card-header>
+                    <mat-card-title>Blood & Donors List</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image src="/assets/images/bloodbank.png" style="height:150px;">
+                <mat-card-content>
+                    <p>
+                        Here you can get your blood of required group.
+                    </p>
+                </mat-card-content>
+                <button mat-raised-button color="primary" routerLink='/blood'>Search</button>
+            </mat-card>
+            
+        </div><br>
+    </div>
+</div> 
+<app-footer></app-footer>
