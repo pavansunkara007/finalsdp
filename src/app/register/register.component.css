@@ -6,7 +6,12 @@
 	height: 560px;
 	opacity: 0.9;
 	color: black;
-  }
+	max-height: 330px;
+}
+
+.background{
+	background-color: blueviolet;
+}
   .cautioncolor{
 	  color: red;
   }

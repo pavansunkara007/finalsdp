@@ -25,15 +25,15 @@ export class SearchOrgansComponent implements OnInit {
     {name:"Lipid profile test", sp:"psychiatrist", qua:"MBBS,MD",hosp:"Lasya Diagnostics, Health Care Diagnostics, Alpha labs", exp:"Rs.299"},
     {name:"Cholesterol Test Price", sp:"cardialogist", qua:"MBBS,MD",hosp:"Sree Labs,Vijaya Labs", exp:"Rs.299"},
     {name:"DNA test", sp:"pediatrician", qua:"MBBS,MD",hosp:"Health Care Diagnostics", exp:"Rs.4000"},
+    
+  ]
+  doctors1=[
     {name:"Liver Panel test", sp:"psychiatrist", qua:"MBBS,MD",hosp:"Alpha labs", exp:"Rs.450"},
     {name:"Urinalysis test", sp:"cardialogist", qua:"MBBS,MD",hosp:"Sneha Labs", exp:"Rs. 1200"},
     {name:"X-Ray Test", sp:"pediatrician", qua:"MBBS,MD",hosp:"Vijaya Labs", exp:"Rs.1300"},
     {name:"CT Scan", sp:"psychiatrist", qua:"MBBS,MD",hosp:"Ralph Diagnostics & Clinics", exp:"Rs.1500"},
     {name:"MRI Test", sp:"cardialogist", qua:"MBBS,MD",hosp:"Appollo Diagnostics", exp:"2600"},
     {name:"Pregnancy Test", sp:"pediatrician", qua:"MBBS,MD",hosp:"Vijaya Labs", exp:"Rs.550"},
-
-
-
 
   ]
 
