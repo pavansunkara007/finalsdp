@@ -1,26 +1,26 @@
 .background {
-    position: relative;
-    height: 100vh;
-    opacity: 2;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(/assets/images/wallpaper.jpg);
-   /* background-color: darkcyan;*/
-    background-size: cover;
+  position: relative;
+  height: 100vh;
+  opacity: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/assets/images/wallpaper.jpg);
+ /* background-color: darkcyan;*/
+  background-size: cover;
 }
 
 .main {
-    position: absolute;
-    top: 20%;
-    left: 14%;
-    display: flex;
-    opacity: 10;
-    justify-content: center;
-    align-items: flex-start;
-    color:rgb(0, 0, 0);
-    font-size: 65px;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: 5000;
+  position: absolute;
+  top: 20%;
+  left: 14%;
+  display: flex;
+  opacity: 10;
+  justify-content: center;
+  align-items: flex-start;
+  color:rgb(0, 0, 0);
+  font-size: 65px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 5000;
 }
