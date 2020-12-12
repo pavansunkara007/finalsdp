@@ -14,6 +14,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatTableModule} from '@angular/material/table';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {​​MatSnackBarModule}​​ from '@angular/material/snack-bar';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 const MaterialComponents=[
   MatCardModule,
@@ -30,7 +31,8 @@ const MaterialComponents=[
   MatTableModule,
   FormsModule, 
   ReactiveFormsModule,
-  MatSnackBarModule
+  MatSnackBarModule,
+  MatGridListModule
 ]
 @NgModule({
   declarations: [],

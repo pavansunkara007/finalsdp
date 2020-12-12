@@ -22,6 +22,7 @@ import { RegisterComponent } from './register/register.component';
 import {HttpClientModule} from '@angular/common/http';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { UserProfileEditComponent } from './user-profile-edit/user-profile-edit.component';
+import { BillingComponent } from './billing/billing.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { UserProfileEditComponent } from './user-profile-edit/user-profile-edit.
     RegisterComponent,
     UserProfileComponent,
     UserProfileEditComponent,
+    BillingComponent,
   ],
   imports: [
     BrowserModule,

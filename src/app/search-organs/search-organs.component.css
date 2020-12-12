@@ -5,7 +5,7 @@
   .example-card {
     left: 10px;
     top:20px;
-    max-width: 400px;
+    max-width: 300px;
     max-height: 400px;
     border-color: rgb(236, 23, 23);
     margin-left:75px;
@@ -18,11 +18,11 @@
 
   .example-card1 {
     left: 10px;
-    top:-1960px;
-    max-width: 400px;
+    top:-1730px;
+    max-width: 300px;
     max-height: 400px;
-    border-color: black;
-    margin-left: 250px;
+    border-color: rgb(236, 23, 23);
+    margin-left:250px;
     margin-bottom:15px;
     border: 50pt;
     display: inline-block;
@@ -56,3 +56,19 @@
 
 }
   
+.appointment{
+  max-width: 250px;
+  min-height: 150px;
+  margin-top: 10px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.appointment1{
+  top: -2023px;
+  min-width: 250px;
+  min-height: 150px;
+  margin-top: 10px;
+  margin-left: 150px;
+  margin-right: 150px;
+}

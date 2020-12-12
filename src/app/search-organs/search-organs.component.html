@@ -1,52 +1,51 @@
 <app-header></app-header>
 <div class="style">
-   <div *ngFor='let d of doctors'>
-      <mat-card class="example-card">
-         <mat-card-header>
-           <div mat-card-avatar >
-            <mat-icon>medical_services</mat-icon>
-           </div>
-           <mat-card-title>{{d.name}}</mat-card-title>
-           <mat-card-subtitle>{{d.sp}}</mat-card-subtitle>
-         </mat-card-header>
-         <mat-card-content>
-            <p style=" font-weight: 1000;">
-               Currently working in {{d.hosp}}.<br>
-               {{d.qua}}<br>
-               The doctor has an experience of {{d.exp}}<br>
-               Would you like to book an appointment with the Doctor?
-            </p>   
-            <input mat-input type="date">
-         </mat-card-content>
-         <mat-card-actions>
-           <button mat-raised-button color=primary (click)="open()">Book your appointment</button>
-         </mat-card-actions>
-       </mat-card>
+   <div class="style">
+      <div *ngFor='let d of doctors'>
+         <mat-card class="appointment">
+            <mat-card-header>
+              <div mat-card-avatar >
+               <mat-icon>medical_services</mat-icon>
+              </div>
+              <mat-card-title>{{d.name}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+               <p style=" font-weight: 450;">
+                  This test is available in {{d.hosp}} <br>
+                  The cost of the test is {{d.exp}}<br>
+                  Would you like to book a slot for the test?
+               </p>   
+               <input mat-input type="date">
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-raised-button color=primary (click)="open()">Book your slot</button>
+            </mat-card-actions>
+          </mat-card>
+      </div>
    </div>
+    
 </div>
 <br>
 
 <div class="style1">
    <div *ngFor='let d1 of doctors1'>
-      <mat-card class="example-card1">
+      <mat-card class="appointment1">
          <mat-card-header>
            <div mat-card-avatar >
             <mat-icon>medical_services</mat-icon>
            </div>
            <mat-card-title>{{d1.name}}</mat-card-title>
-           <mat-card-subtitle>{{d1.sp}}</mat-card-subtitle>
          </mat-card-header>
          <mat-card-content>
-            <p style=" font-weight: 1000;">
-               Currently working in {{d1.hosp}}.<br>
-               {{d1.qua}}<br>
-               The doctor has an experience of {{d1.exp}}<br>
-               Would you like to book an appointment with the Doctor?
+            <p style=" font-weight: 450;">
+               This test is available in {{d1.hosp}} <br>
+               The cost of the test is {{d1.exp}}<br>
+               Would you like to book a slot for the test?
             </p>   
             <input mat-input type="date">
          </mat-card-content>
          <mat-card-actions>
-           <button mat-raised-button color=primary (click)="open()">Book your appointment</button>
+           <button mat-raised-button color=primary (click)="open()">Book your slot</button>
          </mat-card-actions>
        </mat-card><br>
    </div>

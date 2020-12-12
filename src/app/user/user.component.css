@@ -13,3 +13,12 @@
     margin-left: 150px;
     margin-right: 150px;
 }
+
+.billing{
+    min-width: 250px;
+    min-height: 350px;
+    margin-top: 10px;
+    margin-left: 350px;
+    margin-right: 150px;
+
+}

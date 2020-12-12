@@ -11,10 +11,11 @@ import {SearchAsstComponent} from './search-asst/search-asst.component'
 import {DonorListComponent} from './donor-list/donor-list.component'
 import {ContactComponent} from './contact/contact.component'
 import {BloodComponent} from './blood/blood.component'
-import { AsstComponent } from './asst/asst.component';
+import {AsstComponent } from './asst/asst.component';
 import {RegisterComponent} from './register/register.component';
-import { UserProfileComponent } from './user-profile/user-profile.component';
-import { UserProfileEditComponent } from './user-profile-edit/user-profile-edit.component';
+import {UserProfileComponent } from './user-profile/user-profile.component';
+import {UserProfileEditComponent } from './user-profile-edit/user-profile-edit.component';
+import {BillingComponent} from './billing/billing.component';
 
 const routes: Routes = [ 
 {path:'login', component:LoginComponent},
@@ -31,7 +32,8 @@ const routes: Routes = [
 {path:'asst',component:AsstComponent},
 {path:'register',component:RegisterComponent},
 {path:'user-profile', component:UserProfileComponent},
-{path:'user-profile-edit', component:UserProfileEditComponent}
+{path:'user-profile-edit', component:UserProfileEditComponent},
+{path:'billing', component:BillingComponent}
 ];
 
 

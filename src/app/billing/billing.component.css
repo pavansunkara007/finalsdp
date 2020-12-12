@@ -1,0 +1,18 @@
+.example-card {
+  max-width: 400px;
+  align-items: center;
+  margin-left: 400px;
+  margin-top: 150px;
+}
+
+
+.background{
+  background-color: black;
+  background-size: cover;
+  
+}
+
+.example-spacer {
+	flex: 4 1 auto;
+}
+

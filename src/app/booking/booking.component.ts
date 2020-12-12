@@ -15,6 +15,11 @@ export class BookingComponent implements OnInit {
     this.dialog.open(Dialog);
   }
 
+  bill()
+  {
+    this.dialog.open(Bill)
+  }
+
   ngOnInit(): void {
   }
   doctors=[
@@ -29,8 +34,7 @@ export class BookingComponent implements OnInit {
     {name:"Dr.Arya ", sp:"Gynacologist", qua:"MBBS, DGO",hosp:"Rainbow Hospital, Visakapatanam", exp:"23years"},
     {name:"Dr.K Vijay", sp:"Pediatrician", qua:"MBBS",hosp:"NIMS Hospital, Hyderabad", exp:"12years"},
     
-  ]
-  doctors1=[
+
     {name:"Dr. Suresh", sp:"Veternary", qua:"MBBS,DVM",hosp:"Samaritam Veternary Care, Delhi", exp:"21years"},
     {name:"Dr.Maya", sp:"Dermatologist", qua:"MBBS,MD Derma",hosp:"Yashoda Hospital, Delhi", exp:"18years"},
     {name:"Dr.Kushi", sp:"Physchiaiatrist", qua:"MS Psychology",hosp:"Appollo Hospitals, Kolkata", exp:"10years"},
@@ -51,3 +55,9 @@ export class BookingComponent implements OnInit {
   templateUrl:'./dialog.html',
 })
 export class Dialog{}
+
+@Component({
+  selector:'app-bill',
+  templateUrl:'./bill.html',
+})
+export class Bill{}
