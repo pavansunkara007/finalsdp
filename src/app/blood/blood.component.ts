@@ -16,6 +16,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 6, BloodGroup: 'B', RhFactor: '-', units: '170',hosp:'Rainbow Hospital'},
   {position: 7, BloodGroup: 'O', RhFactor: '-', units: '180',hosp:'Siri Hospitals, Madhapur'},
   {position: 8, BloodGroup: 'AB', RhFactor: '-', units: '200',hosp:'LifeLine Hospital, Vijaya Medicals'},
+  {position: 9, BloodGroup: 'O', RhFactor: '+', units: '160',hosp:'Health Care, Madhapur'},
 ];
 
 @Component({

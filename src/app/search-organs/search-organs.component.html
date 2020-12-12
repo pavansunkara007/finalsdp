@@ -1,53 +1,32 @@
-<app-header></app-header>
-<div class="style">
-   <div class="style">
+<div style="background-color: #3f51b550;">
+   <app-header></app-header>
+   <mat-grid-list cols="2" rowHeight="2:1">
       <div *ngFor='let d of doctors'>
-         <mat-card class="appointment">
-            <mat-card-header>
-              <div mat-card-avatar >
-               <mat-icon>medical_services</mat-icon>
-              </div>
-              <mat-card-title>{{d.name}}</mat-card-title>
-            </mat-card-header>
-            <mat-card-content>
-               <p style=" font-weight: 450;">
-                  This test is available in {{d.hosp}} <br>
-                  The cost of the test is {{d.exp}}<br>
-                  Would you like to book a slot for the test?
-               </p>   
-               <input mat-input type="date">
-            </mat-card-content>
-            <mat-card-actions>
-              <button mat-raised-button color=primary (click)="open()">Book your slot</button>
-            </mat-card-actions>
-          </mat-card>
+         <mat-grid-tile>
+            <mat-card class="example-card">
+                  <mat-card-header>
+                    <div mat-card-avatar >
+                     <mat-icon>medical_services</mat-icon>
+                    </div>
+                    <mat-card-title>{{d.name}}</mat-card-title>
+                    <mat-card-subtitle>{{d.sp}}</mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                     <p style=" font-weight: 450;">
+                        This test is available in {{d.hosp}} <br>
+                        Would you like to book a slot for the test?
+                     </p>   
+                     <input mat-input type="date">
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <button mat-raised-button color=primary (click)="open()">Book your appointment</button>
+                    <button mat-stroked-button color=accent (click)="bill()">Generate Bill</button>
+                  </mat-card-actions>
+                </mat-card>
+         </mat-grid-tile>
       </div>
-   </div>
-    
-</div>
-<br>
+   </mat-grid-list>
+   <app-footer></app-footer>
+   
 
-<div class="style1">
-   <div *ngFor='let d1 of doctors1'>
-      <mat-card class="appointment1">
-         <mat-card-header>
-           <div mat-card-avatar >
-            <mat-icon>medical_services</mat-icon>
-           </div>
-           <mat-card-title>{{d1.name}}</mat-card-title>
-         </mat-card-header>
-         <mat-card-content>
-            <p style=" font-weight: 450;">
-               This test is available in {{d1.hosp}} <br>
-               The cost of the test is {{d1.exp}}<br>
-               Would you like to book a slot for the test?
-            </p>   
-            <input mat-input type="date">
-         </mat-card-content>
-         <mat-card-actions>
-           <button mat-raised-button color=primary (click)="open()">Book your slot</button>
-         </mat-card-actions>
-       </mat-card><br>
-   </div>
 </div>
-<app-footer></app-footer>

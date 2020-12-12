@@ -1,37 +1,34 @@
-<div style="background-color: darkslategray;">
+<div style="background-color: #3f51b550;">
    <app-header></app-header>
-<mat-grid-list cols="2" rowHeight="2:1">
-   <div *ngFor='let d of doctors'>
-   <mat-grid-tile>
-      <mat-card class="example-card">
-            <mat-card-header>
-              <div mat-card-avatar >
-               <mat-icon>medical_services</mat-icon>
-              </div>
-              <mat-card-title>{{d.name}}</mat-card-title>
-              <mat-card-subtitle>{{d.sp}}</mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-               <p style=" font-weight: 1000;">
-                  Currently working in {{d.hosp}}.<br>
-                  {{d.qua}}<br>
-                  The doctor has an experience of {{d.exp}}<br>
-                  Would you like to book an appointment with the Doctor?
-               </p>   
-               <input mat-input type="date">
-            </mat-card-content>
-            <mat-card-actions>
-              <button mat-raised-button color=primary (click)="open()">Book your appointment</button>
-              <button mat-stroked-button color=accent (click)="bill()">Generate Bill</button>
-            </mat-card-actions>
-          </mat-card>
-   </mat-grid-tile>
-</div>
+   <mat-grid-list cols="2" rowHeight="2:1">
+      <div *ngFor='let d of doctors'>
+         <mat-grid-tile>
+            <mat-card class="example-card">
+                  <mat-card-header>
+                    <div mat-card-avatar >
+                     <mat-icon>medical_services</mat-icon>
+                    </div>
+                    <mat-card-title>{{d.name}}</mat-card-title>
+                    <mat-card-subtitle>{{d.sp}}</mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                     <p style=" font-weight: 1000;">
+                        Currently working in {{d.hosp}}.<br>
+                        {{d.qua}}<br>
+                        The doctor has an experience of {{d.exp}}<br>
+                        Would you like to book an appointment with the Doctor?
+                     </p>   
+                     <input mat-input type="date">
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <button mat-raised-button color=primary (click)="open()">Book your appointment</button>
+                    <button mat-stroked-button color=accent (click)="bill()">Generate Bill</button>
+                  </mat-card-actions>
+                </mat-card>
+         </mat-grid-tile>
+      </div>
+   </mat-grid-list>
+   <app-footer></app-footer>
    
- </mat-grid-list>
- 
-
-<app-footer></app-footer>
-
 
 </div>
